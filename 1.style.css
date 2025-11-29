@@ -1,0 +1,116 @@
+*{
+    margin: 0
+    padding: 0;
+    box-sizing: border-box; /* Đảm bảo padding và border được tính trong kích thước phần tử */
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+}
+html{
+    font-size: 62.5%; /* Thiết lập kích thước gốc để dễ dàng sử dụng rem (1rem = 10px) */
+}
+body{
+    width: 100%
+    height: 100vh;
+    background-color: #5b1417;
+    color: #fffdf4;
+}
+header{
+    margin-top: 20px;
+    position: fixed;  /* Cố định header ở trên cùng */
+    top: 0;
+    left: 40%;
+    width: 100%;
+    height: 40px;
+    padding: 1rem 10%; /* Khoảng cách bên trái và bên phải */
+    display: flex; /*bật Flexbox*/
+    z-index: 1000; /* Đảm bảo header nằm trên cùng */
+}
+nav a{
+    font-size: 1.6rem;
+    color:#fffdf4;
+    font-weight: 700;
+    margin-left: 4rem; /* Khoảng cách giữa các liên kết */
+    transition: color 0.3s; /* Hiệu ứng chuyển màu mượt mà */
+}
+nav a:active{
+    color: #fffdf4 ;
+}
+section
+{
+    padding: 10rem 20% 10rem; /* Khoảng cách bên trái và bên phải, thêm khoảng cách trên để tránh bị header che khuất */
+    min-height: 100vh; /* Đảm bảo mỗi section chiếm ít nhất chiều cao của viewport */
+}
+.home{
+    gao: 40rem;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10rem; /* Khoảng cách giữa các phần tử con */
+    background-color: #5b1417; 
+    padding-left: 10rem;
+    padding-right: 10rem
+}
+.home-img{
+    border-radius: 20px; /* Hình tròn */
+}
+.home-img img{  
+    display: block; /* Hiển thị dưới dạng khối */
+    position: relative;/* Đặt vị trí tương đối để chứa phần tử con */
+    width: 550px;
+    height: 600px;
+    border-radius: 20px; /* Hình tròn */
+    object-fit: cover; /* Đảm bảo hình ảnh không bị méo */
+    left: 2%;
+    margin-left: 4rem;
+}
+.home-content{
+    display: flex;
+    flex-direction: column; /* Sắp xếp theo cột */
+    gap: 0.1rem; /* Khoảng cách giữa các phần tử con */
+    line-height:1;
+    margin-bottom: 1rem;
+}
+.home-content h1{
+    margin-top: 0;
+    font-size: 6rem; /* Kích thước chữ lớn */
+    font-weight: 700; /* In đậm */
+    line-height: 1.2; /* Khoảng cách dòng */
+   
+
+}
+.home-content h4{
+    margin-top:10px;
+    font-size: 3rem; /* Kích thước chữ lớn */
+    font-weight: 700; /* In đậm */
+    margin-bottom: 1rem; /* Khoảng cách dưới tiêu đề */
+    line-height: 1.5; /* Khoảng cách dòng */
+
+    }
+.education{
+    font-size: 20px; /* Ví dụ: Lớn hơn 1.1rem của liên hệ */
+    font-weight: 500;
+    
+    /* Tạo khoảng cách lớn ở dưới để tách biệt rõ ràng với khối liên hệ */
+    margin-bottom: 2.5rem; /* Khoảng cách lớn (2.5rem) */
+    margin-top: 1rem; /* Khoảng cách trên nhỏ hơn để dính vào h4 */
+    
+    line-height: 1.5;
+    color: #FFFFFF; /* Màu chữ trắng */
+}
+.contact h6 {
+    font-size: 20px; 
+    font-weight: 400; /* Dùng font mỏng hơn (400) */
+    
+    /* Giảm tối đa khoảng cách giữa các dòng */
+    margin-bottom: 0.5rem; /* Rất quan trọng: Giảm khoảng cách dưới */
+    margin-top: 0; /* Đảm bảo không có margin trên không cần thiết */
+    
+    line-height: 1.75;
+    color: #FFFFFF;
+}
+.contact h6 a{
+    color: #FFFFFF; 
+    font-style: italic
+}
+   
