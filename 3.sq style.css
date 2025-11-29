@@ -1,0 +1,178 @@
+*{
+    margin: 0
+    padding: 0;
+    box-sizing: border-box; /* Đảm bảo padding và border được tính trong kích thước phần tử */
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+}
+html{
+    font-size: 62.5%; /* Thiết lập kích thước gốc để dễ dàng sử dụng rem (1rem = 10px) */
+}
+body{
+    width: 100% /* 100% của chiều rộng viewport */
+    height: 100vh;/* 100% của chiều cao viewport */
+    background-color: #5b1417;
+    color: #fffdf4;
+}
+header{
+    margin-top: 20px;
+    position: fixed;  /* Cố định header ở trên cùng */
+    top: 0;
+    left: 40%;
+    width: 100%;
+    height: 40px;
+    padding: 1rem 10%; /* Khoảng cách bên trái và bên phải */
+    display: flex; /*bật Flexbox*/
+    z-index: 1000; /* Đảm bảo header nằm trên cùng */
+}
+nav a{
+    font-size: 1.6rem;
+    color:#fffdf4;
+    font-weight: 700;
+    margin-left: 4rem; /* Khoảng cách giữa các liên kết */
+    transition: color 0.3s; /* Hiệu ứng chuyển màu mượt mà */
+}
+nav a:active{
+    color: #fffdf4 ;
+}
+section
+{
+    padding: 10rem 20% 10rem; /* Khoảng cách bên trái và bên phải, thêm khoảng cách trên để tránh bị header che khuất */
+    min-height: 100vh; /* Đảm bảo mỗi section chiếm ít nhất chiều cao của viewport */
+    padding-bottom: 0rem;
+}
+.home{
+    gap: 0;
+    display: flex;
+    justify-content: flex-start; /* Căn lề trái */
+    gap: 10rem; /* Khoảng cách giữa các phần tử con */
+    background-color: #5b1417; 
+    padding-left: 10rem;
+    padding-right: 10rem
+}
+.home-img{
+    border-radius: 20px; /* Hình tròn */
+}
+.home-img img{  
+    display: block; /* Hiển thị dưới dạng khối */
+    position: relative;/* Đặt vị trí tương đối để chứa phần tử con */
+    width: 550px;
+    height: px;
+    border-radius: 20px; /* Hình tròn */
+    object-fit: cover; /* Đảm bảo hình ảnh không bị méo */
+}
+.cauhoi1{
+    margin-left: auto; /* Đẩy phần tử về bên phải */
+    display: flex;
+    flex-direction: column; /* Sắp xếp theo cột */
+    gap: 0.1rem; /* Khoảng cách giữa các phần tử con */
+    line-height:1;
+    margin-bottom: 1rem;
+}
+.cauhoi1 h1{
+    margin-top: 0;
+    font-size: 20px; /* Kích thước chữ lớn */
+    font-weight: 700; /* In đậm */
+    line-height: 1.5; /* Khoảng cách dòng */
+   
+
+}
+.cauhoi1 p{
+
+    margin-top:10px;
+    font-size: 16px; /* Kích thước chữ lớn */
+    font-weight: 300; /* In đậm */
+    margin-bottom: 4rem; /* Khoảng cách dưới tiêu đề */
+    line-height: 1.5; /* Khoảng cách dòng */
+}
+.cauhoi2 h1{
+    margin-top: 0;
+    font-size: 20px; /* Kích thước chữ lớn */
+    font-weight: 700; /* In đậm */
+    line-height: 1.5; /* Khoảng cách dòng */
+   
+
+}
+.cauhoi2 p{
+    margin-top:10px;
+    font-size: 16px; /* Kích thước chữ lớn */
+    font-weight: 300; /* In đậm */
+    margin-bottom: 1rem; /* Khoảng cách dưới tiêu đề */
+    line-height: 1.5; /* Khoảng cách dòng */
+}
+.home2{
+    gap: 10rem; /* Khoảng cách giữa các phần tử con */
+    background-color: #5b1417; 
+    padding-left: 10rem;
+    padding-right: 10rem
+}
+.cauhoi3{
+    width: 100%;
+    margin: 0; 
+    padding: 0;
+}
+.cauhoi3 h1{
+    margin-top: 0;
+    font-size: 20px; /* Kích thước chữ lớn */
+    font-weight: 700; /* In đậm */
+    line-height: 1.5; /* Khoảng cách dòng */
+}
+.cauhoi3 p{
+    margin-top:10px;
+    font-size: 16px; /* Kích thước chữ lớn */
+    font-weight: 300; /* In đậm */
+    margin-bottom: 1rem; /* Khoảng cách dưới tiêu đề */
+    line-height: 1.5; /* Khoảng cách dòng */
+}  
+.cauhoi4 {
+    width: 100%;
+    margin: 0; 
+    padding: 0;
+}
+.cauhoi4 h1{
+    margin-top: 0;
+    font-size: 20px; /* Kích thước chữ lớn */
+    font-weight: 700; /* In đậm */
+    line-height: 1.5; /* Khoảng cách dòng */
+}
+.cauhoi4 p{
+    margin-top:10px;
+    font-size: 16px; /* Kích thước chữ lớn */
+    font-weight: 300; /* In đậm */
+    margin-bottom: 1rem; /* Khoảng cách dưới tiêu đề */
+    line-height: 1.5; /* Khoảng cách dòng */
+}
+.cauhoi4 ul{
+    list-style-type: disc; /* Dấu chấm đầu dòng */
+    margin-left: 20px; /* Thụt lề bên trái */
+    font-size: 16px; /* Kích thước chữ */
+    font-weight: 300; /* In đậm */
+}  
+.cauhoi5 {
+    width: 100%;
+    margin: 0; 
+    padding: 0;
+}
+.cauhoi5 h1{
+    margin-top: 0;
+    font-size: 20px; /* Kích thước chữ lớn */
+    font-weight: 700; /* In đậm */
+    line-height: 1.75; /* Khoảng cách dòng */
+}
+.cauhoi5 p{
+    margin-top:10px;
+    font-size: 16px; /* Kích thước chữ lớn */
+    font-weight: 300; /* In đậm */
+    margin-bottom: 1rem; /* Khoảng cách dưới tiêu đề */
+    line-height: 1.75; /* Khoảng cách dòng */
+    gap: 0;
+}
+.cauhoi5 ul {
+    list-style-type: disc; /* Dấu chấm đầu dòng */
+    margin-left: 16px; /* Thụt lề bên trái */
+    font-size: 16px; /* Kích thước chữ */
+    font-weight: 300; /* In đậm */
+    line-height: 1.75;
+}  
